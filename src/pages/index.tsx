@@ -18,7 +18,7 @@ export default function Home() {
       <main className="flex flex-col gap-[20px] row-start-2 items-center text-center max-w-2xl">
         <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight">LuckyUI</h1>
         <p className="text-base sm:text-lg text-black/70 dark:text-white/70">
-          Waveful's official design system. Accessible, themeable components, design tokens,
+          Waveful&apos;s official design system. Accessible, themeable components, design tokens,
           and tooling to build consistent, high‑quality interfaces across Waveful products.
         </p>
       </main>
