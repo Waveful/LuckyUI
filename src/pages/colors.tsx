@@ -1,4 +1,5 @@
 import { colors } from '@/theme';
+import Head from 'next/head';
 
 export default function ColorsPage() {
   const palette = Object.entries(colors).filter(([k, v]) => typeof v === 'string');
@@ -6,6 +7,10 @@ export default function ColorsPage() {
 
   return (
     <div className="py-10">
+      <Head>
+        <title>Lucky UI — Colors</title>
+        <meta name="description" content="Color palette and scales used across LuckyUI." />
+      </Head>
       <h1 className="text-2xl font-semibold mb-6">Colors</h1>
       <section className="mb-8">
         <h2 className="text-lg font-medium mb-3">Semantic</h2>

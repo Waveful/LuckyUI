@@ -1,10 +1,15 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <div
       className={`grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
     >
+      <Head>
+        <title>Lucky UI — Home</title>
+        <meta name="description" content="Welcome to LuckyUI, Waveful's official design system." />
+      </Head>
       <main className="flex flex-col gap-[20px] row-start-2 items-center text-center max-w-2xl">
         <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight">LuckyUI</h1>
         <p className="text-base sm:text-lg text-black/70 dark:text-white/70">

@@ -1,8 +1,13 @@
 import { typography } from '@/theme';
+import Head from 'next/head';
 
 export default function TypographyPage() {
   return (
     <div className="py-10">
+      <Head>
+        <title>Lucky UI — Typography</title>
+        <meta name="description" content="Typography tokens and examples used across LuckyUI." />
+      </Head>
       <h1 className="text-2xl font-semibold mb-6">Typography</h1>
       <section className="mb-8">
         <h2 className="text-lg font-medium mb-3">Font Families</h2>
