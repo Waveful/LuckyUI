@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 type DocsLayoutProps = React.PropsWithChildren<{ className?: string }>; 
 
@@ -9,8 +10,16 @@ export function DocsLayout({ children, className }: DocsLayoutProps) {
       <header className="fixed top-0 inset-x-0 z-50 border-b border-gray-200 bg-white dark:bg-black">
         <div className="mx-auto w-full max-w-7xl px-4 py-4 flex items-center justify-between">
           <div className="leading-tight">
-            <Link href="/" className="block text-xl sm:text-2xl md:text-4xl font-bold">
-              Lucky UI
+            <Link href="/" className="flex items-center gap-2">
+              <Image
+                src="/lucky_ui_logo.png"
+                alt="Lucky UI"
+                width={48}
+                height={48}
+                className="rounded-full"
+                priority
+              />
+              <span className="block text-xl sm:text-2xl md:text-4xl font-bold">LuckyUI</span>
             </Link>
           </div>
           <Link 
@@ -59,12 +68,13 @@ export function DocsLayout({ children, className }: DocsLayoutProps) {
       </div>
       <footer className="border-t border-gray-200">
         <div className="mx-auto w-full max-w-7xl px-4 py-6 text-sm text-center">
-          <div className="font-medium">Lucky UI</div>
-          <div className="text-gray-600 dark:text-gray-300">made with love by Waveful</div>
+          <div className="font-medium">LuckyUI</div>
+          <div className="text-gray-600 dark:text-gray-300">made with love by <Link target='_blank' href="https://waveful.com">Waveful</Link></div>
         </div>
       </footer>
     </div>
   );
 }
+
 
 

@@ -1,6 +1,7 @@
 ## Lucky UI
 
-![LuckyUI](./luckyui.png)
+
+![LuckyUI Logo](./public/lucky_ui_logo.png)
 
 LuckyUI is Waveful's official design system. It provides accessible, themeable
 components, design tokens, and tooling to build consistent, high‑quality

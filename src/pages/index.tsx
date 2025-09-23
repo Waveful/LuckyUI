@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -11,6 +12,14 @@ export default function Home() {
         <meta name="description" content="Welcome to LuckyUI, Waveful's official design system." />
       </Head>
       <main className="flex flex-col gap-[20px] row-start-2 items-center text-center max-w-2xl">
+        <Image
+          src="/lucky_ui_logo.png"
+          alt="Lucky UI logo"
+          width={256}
+          height={256}
+          priority
+          className="rounded-xl"
+        />
         <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight">LuckyUI</h1>
         <p className="text-base sm:text-lg text-black/70 dark:text-white/70">
           Waveful&apos;s official design system. Accessible, themeable components, design tokens,
@@ -46,3 +55,4 @@ export default function Home() {
     </div>
   );
 }
+
