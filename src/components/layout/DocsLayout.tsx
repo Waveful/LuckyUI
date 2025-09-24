@@ -65,7 +65,7 @@ export function DocsLayout({ children, className }: DocsLayoutProps) {
 
               {/* Frameworks */}
               <p className="mb-2 mt-4 font-semibold text-gray-700 dark:text-gray-200">Frameworks</p>
-              <ul className="space-y-1">
+              <ul className="mb-4 space-y-1">
                 <li>
                   <Link className="hover:underline" href="/flutter">Flutter</Link>
                 </li>
@@ -92,7 +92,7 @@ export function DocsLayout({ children, className }: DocsLayoutProps) {
                   <Link className="hover:underline" href="/ui">All Components</Link>
                 </li>
               </ul>
-              
+
             </nav>
           </aside>
           <main>{children}</main>
