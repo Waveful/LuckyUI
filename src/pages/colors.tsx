@@ -1,11 +1,10 @@
 import Head from 'next/head';
 
-import { colors } from '@/theme';
+import { colors, ColorScopes } from '@/theme';
 
 export default function ColorsPage() {
   // Use the new grouped structure (scoped API)
-  const scopes: Record<string, Record<string, string | Record<string, string>>> =
-    (colors as any).scopes;
+  const scopes: ColorScopes = colors.scopes;
 
   // Helper utilities to ensure readable text over color backgrounds
   const hexToRgb = (hex: string) => {

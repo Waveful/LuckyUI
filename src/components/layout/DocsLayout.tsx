@@ -31,9 +31,11 @@ export function DocsLayout({ children, className }: DocsLayoutProps) {
               aria-label="Star LuckyUI on GitHub"
               title="Star LuckyUI on GitHub"
             >
-              <img
+              <Image
                 src="https://img.shields.io/github/stars/Waveful/lucky-ui?style=social"
                 alt="GitHub Repo stars"
+                width={120}
+                height={24}
                 className="h-6 w-auto"
               />
             </Link>
