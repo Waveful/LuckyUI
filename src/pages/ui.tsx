@@ -4,7 +4,7 @@ export default function UIPage() {
   return (
     <>
       <Head>
-        <title>Lucky UI — Components</title>
+        <title>LuckyUI — Components</title>
         <meta name="description" content="Preview the core UI components of LuckyUI." />
       </Head>
       <h1 className="text-2xl font-semibold mb-6">UI Components</h1>

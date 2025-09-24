@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Lucky UI — Waveful Design System</title>
+        <title>LuckyUI — Waveful Design System</title>
         <meta name="description" content="LuckyUI is Waveful's official design system with accessible, themeable components and tokens." />
         <meta name="theme-color" content="#000000" />
         <link rel="icon" href="/favicon.ico" />

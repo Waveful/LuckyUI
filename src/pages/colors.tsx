@@ -8,7 +8,7 @@ export default function ColorsPage() {
   return (
     <div className="py-10">
       <Head>
-        <title>Lucky UI — Colors</title>
+        <title>LuckyUI — Colors</title>
         <meta name="description" content="Color palette and scales used across LuckyUI." />
       </Head>
       <h1 className="text-2xl font-semibold mb-6">Colors</h1>
@@ -29,11 +29,10 @@ export default function ColorsPage() {
           {scales.map(([name, values]) => (
             <div key={name}>
               <div className="text-sm font-medium mb-2">{name}</div>
-              <div className="grid grid-cols-5 sm:grid-cols-8 gap-2">
+              <div className="grid grid-cols-8 sm:grid-cols-8 gap-2">
                 {Object.entries(values as Record<string, string>).map(([step, hex]) => (
-                  <div key={step} className="border rounded p-2 text-center text-xs">
-                    <div className="h-8 rounded mb-1" style={{ background: hex }} />
-                    {step}
+                  <div key={step} className="rounded p-2 text-center text-xs">
+                    <div className="h-12 rounded mb-1" style={{ background: hex }} />
                   </div>
                 ))}
               </div>

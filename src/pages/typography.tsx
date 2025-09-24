@@ -5,7 +5,7 @@ export default function TypographyPage() {
   return (
     <div className="py-10">
       <Head>
-        <title>Lucky UI — Typography</title>
+        <title>LuckyUI — Typography</title>
         <meta name="description" content="Typography tokens and examples used across LuckyUI." />
       </Head>
       <h1 className="text-2xl font-semibold mb-6">Typography</h1>
