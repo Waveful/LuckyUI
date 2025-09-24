@@ -14,16 +14,16 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#000000" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" href="/lucky_ui_logo.png" />
-        <link rel="apple-touch-icon" href="/lucky_ui_colored.png" />
+        <link rel="apple-touch-icon" href="/lucky_ui.png" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Lucky UI — Waveful Design System" />
         <meta property="og:description" content="Accessible, themeable components, tokens, and docs for Waveful products." />
-        <meta property="og:image" content="/lucky_ui_colored.png" />
+        <meta property="og:image" content="/lucky_ui.png" />
         <meta property="og:url" content="https://lucky-ui.local/" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Lucky UI — Waveful Design System" />
         <meta name="twitter:description" content="Accessible, themeable components, tokens, and docs for Waveful products." />
-        <meta name="twitter:image" content="/lucky_ui_colored.png" />
+        <meta name="twitter:image" content="/lucky_ui.png" />
       </Head>
       <Component {...pageProps} />
     </DocsLayout>
