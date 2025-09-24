@@ -22,26 +22,56 @@ export function DocsLayout({ children, className }: DocsLayoutProps) {
               <span className="block text-xl sm:text-2xl md:text-4xl font-bold">LuckyUI</span>
             </Link>
           </div>
-          <Link 
-            href="https://waveful.com/download" 
-            className="inline-flex items-center rounded-md bg-black text-white px-3 py-1.5 text-sm dark:bg-white dark:text-black"
-          >
-            Download the App
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link
+              href="https://github.com/Waveful/lucky-ui"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-md px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800"
+              aria-label="Star LuckyUI on GitHub"
+              title="Star LuckyUI on GitHub"
+            >
+              <img
+                src="https://img.shields.io/github/stars/Waveful/lucky-ui?style=social"
+                alt="GitHub Repo stars"
+                className="h-6 w-auto"
+              />
+            </Link>
+            <Link 
+              href="https://waveful.com/download" 
+              className="inline-flex items-center rounded-md bg-black text-white px-3 py-1.5 text-sm dark:bg-white dark:text-black"
+            >
+              Join Waveful
+            </Link>
+          </div>
         </div>
       </header>
       <div className="mx-auto w-full max-w-7xl px-4 pt-24 pb-8 flex-1 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-8">
             <aside className="p-4 lg:sticky lg:top-8 h-max border-b md:border-b-0 border-gray-200 lg:pr-6">
             <nav className="text-sm">
+
+              {/* Lucky UI */}
               <p className="mb-2 font-semibold text-gray-700 dark:text-gray-200">
                 Lucky UI
               </p>
+
+              {/* About */}
               <ul className="mb-4 space-y-1">
                 <li>
                   <Link className="hover:underline" href="/">Welcome</Link>
                 </li>
               </ul>
+
+              {/* Frameworks */}
+              <p className="mb-2 mt-4 font-semibold text-gray-700 dark:text-gray-200">Frameworks</p>
+              <ul className="space-y-1">
+                <li>
+                  <Link className="hover:underline" href="/flutter">Flutter</Link>
+                </li>
+              </ul>
+
+              {/* Overview */}
               <p className="mb-2 font-semibold text-gray-700 dark:text-gray-200">Overview</p>
               <ul className="mb-4 space-y-1">
                 <li>
@@ -52,6 +82,7 @@ export function DocsLayout({ children, className }: DocsLayoutProps) {
                 </li>
               </ul>
 
+              {/* Components */}
               <p className="mb-2 mt-4 font-semibold text-gray-700 dark:text-gray-200">Components</p>
               <ul className="space-y-1">
                 <li>
@@ -61,6 +92,7 @@ export function DocsLayout({ children, className }: DocsLayoutProps) {
                   <Link className="hover:underline" href="/ui">All Components</Link>
                 </li>
               </ul>
+              
             </nav>
           </aside>
           <main>{children}</main>

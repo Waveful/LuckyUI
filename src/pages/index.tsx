@@ -44,6 +44,9 @@ export default function Home() {
           <Link href="#form" className="rounded-md border border-gray-100 px-3 py-2 text-left">
             Components · Form
           </Link>
+          <Link href="/flutter" className="rounded-md border border-gray-100 px-3 py-2 text-left">
+            Frameworks · Flutter
+          </Link>
           <Link href="#theme" className="rounded-md border px-3 py-2 text-left hover:bg-black/5 dark:hover:bg-white/5 sm:col-span-2">
             Theme · Tokens (colors, typography, spacing, shadows, radii, breakpoints)
           </Link>
