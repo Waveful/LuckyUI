@@ -1,4 +1,4 @@
-## Lucky UI
+## LuckyUI
 
 ![LuckyUI Logo](./public/lucky_ui_logo.png)
 
