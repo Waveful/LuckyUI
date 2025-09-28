@@ -10,12 +10,34 @@ export default function TypographyPage() {
       </Head>
       <h1 className="text-2xl font-semibold mb-6">Typography</h1>
       <section className="mb-8">
-        <h2 className="text-lg font-medium mb-3">Font Families</h2>
-        <div className="space-y-2">
-          <div className="text-sm text-gray-600">Sans</div>
-          <p style={{ fontFamily: typography.fontFamily.sans }}>The quick brown fox jumps over the lazy dog.</p>
-          <div className="text-sm text-gray-600 mt-4">Mono</div>
-          <p style={{ fontFamily: typography.fontFamily.mono }}>const lucky = true; // The quick brown fox</p>
+        <h2 className="text-lg font-medium mb-3">System Fonts</h2>
+        <div className="space-y-4">
+          <div>
+            <div className="text-sm text-gray-600 mb-1">Sans (Primary)</div>
+            <p className="text-gray-800">
+              Uses system default fonts for a native feel:
+              <ul className="list-disc pl-5 mt-1 space-y-1">
+                <li>San Francisco on Apple devices</li>
+                <li>Roboto on Android devices</li>
+                <li>System UI font on other platforms</li>
+              </ul>
+            </p>
+            <div className="mt-3 p-3 bg-gray-50 rounded">
+              <p style={{ fontFamily: typography.fontFamily.sans }} className="text-lg">
+                The quick brown fox jumps over the lazy dog.
+              </p>
+            </div>
+          </div>
+          
+          <div className="pt-4">
+            <div className="text-sm text-gray-600 mb-1">Monospace</div>
+            <p className="text-gray-800 mb-2">Used for code and technical content</p>
+            <div className="p-3 bg-gray-50 rounded">
+              <p style={{ fontFamily: typography.fontFamily.mono }} className="text-sm">
+                const lucky = true; // The quick brown fox
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section>
