@@ -80,7 +80,7 @@ export default function ColorsPage() {
                   {groups.map(([groupName, values]) => (
                     <div key={groupName} className="border border-gray-200 rounded-md p-3">
                       <div className="text-sm font-medium mb-2">{groupName}</div>
-                      <div className="grid grid-cols-1 md:grid-cols-7 gap-2">
+                      <div className="grid grid-cols-1 md:grid-cols-9 gap-2">
                         {Object.entries(values).map(([step, hex]) => (
                           <div key={step} className="rounded text-center text-xs">
                             <div
