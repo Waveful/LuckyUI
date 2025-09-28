@@ -25,8 +25,8 @@ export const colors = {
       dolful_purple_02: '#B3CAFF',
       dolful_purple_03: '#535AFF',
       super_violet: '#BB00FF',
-      super_pink_02: '#FF005E',
-      super_red_03: '#FF0011',
+      super_pink: '#FF005E',
+      super_red: '#FF0011',
     },
     semantic: {
       success: '#05DF72',
