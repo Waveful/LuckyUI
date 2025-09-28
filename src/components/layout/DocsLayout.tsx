@@ -77,6 +77,9 @@ export function DocsLayout({ children, className }: DocsLayoutProps) {
               <p className="mb-2 font-semibold text-gray-700 dark:text-gray-200">Overview</p>
               <ul className="mb-4 space-y-1">
                 <li>
+                  <Link className="hover:underline" href="/logos">Logos</Link>
+                </li>
+                <li>
                   <Link className="hover:underline" href="/colors">Colors</Link>
                 </li>
                 <li>
