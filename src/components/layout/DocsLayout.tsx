@@ -80,7 +80,13 @@ export function DocsLayout({ children, className }: DocsLayoutProps) {
                   <Link className="hover:underline" href="/logos">Logos</Link>
                 </li>
                 <li>
+                  <Link className="hover:underline" href="/characters">Characters</Link>
+                </li>
+                <li>
                   <Link className="hover:underline" href="/colors">Colors</Link>
+                </li>
+                <li>
+                  <Link className="hover:underline" href="/gradients">Gradients</Link>
                 </li>
                 <li>
                   <Link className="hover:underline" href="/typography">Typography</Link>
