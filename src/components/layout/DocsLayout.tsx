@@ -82,7 +82,15 @@ export function DocsLayout({ children, className }: DocsLayoutProps) {
               <p className="mb-2 mt-4 font-semibold text-gray-700 dark:text-gray-200">Frameworks</p>
               <ul className="mb-4 space-y-1">
                 <li>
-                  <Link className="hover:underline" href="/flutter">Flutter</Link>
+                  <Link className="hover:underline flex items-center gap-2" href="/flutter">
+                    Flutter
+                    <span className="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium text-white" style={{ backgroundColor: '#024EFA' }}>
+                      New
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link className="hover:underline" href="/nextjs">Next.js</Link>
                 </li>
               </ul>
 
