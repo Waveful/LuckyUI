@@ -1,1 +1,168 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* LuckyUI Brand Colors */
+  --lucky-blue: 221 99% 49%;
+  --lucky-cyan: 194 100% 50%;
+  --lucky-purple: 225 100% 75%;
+  --lucky-violet: 280 100% 50%;
+  --lucky-pink: 340 100% 50%;
+  
+  /* Semantic Colors */
+  --success: 155 95% 45%;
+  --success-foreground: 0 0% 100%;
+  --danger: 346 100% 46%;
+  --danger-foreground: 0 0% 100%;
+  --warning: 48 100% 50%;
+  --warning-foreground: 0 0% 0%;
+  
+  /* Base Colors - Light Mode */
+  --background: 0 0% 100%;
+  --foreground: 240 10% 4%;
+  
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 4%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 4%;
+  
+  --primary: 221 99% 49%;
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 240 5% 96%;
+  --secondary-foreground: 240 6% 10%;
+  
+  --muted: 240 5% 96%;
+  --muted-foreground: 240 4% 46%;
+  
+  --accent: 240 5% 96%;
+  --accent-foreground: 240 6% 10%;
+  
+  --destructive: 346 100% 46%;
+  --destructive-foreground: 0 0% 100%;
+  
+  --border: 240 6% 90%;
+  --input: 240 6% 90%;
+  --ring: 221 99% 49%;
+  
+  --radius: 0.625rem;
+}
+
+.dark {
+  /* Base Colors - Dark Mode */
+  --background: 240 10% 4%;
+  --foreground: 0 0% 98%;
+  
+  --card: 240 10% 6%;
+  --card-foreground: 0 0% 98%;
+  
+  --popover: 240 10% 6%;
+  --popover-foreground: 0 0% 98%;
+  
+  --primary: 221 99% 55%;
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 240 4% 16%;
+  --secondary-foreground: 0 0% 98%;
+  
+  --muted: 240 4% 16%;
+  --muted-foreground: 240 5% 65%;
+  
+  --accent: 240 4% 16%;
+  --accent-foreground: 0 0% 98%;
+  
+  --destructive: 346 100% 50%;
+  --destructive-foreground: 0 0% 100%;
+  
+  --border: 240 4% 16%;
+  --input: 240 4% 16%;
+  --ring: 221 99% 55%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Animation utilities */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in-from-top {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-from-bottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-from-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.2s ease-out;
+}

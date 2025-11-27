@@ -1,5 +1,14 @@
-import React from 'react';
+import React from "react";
+import { cn } from "@/lib/utils";
 
-export function Container({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={['mx-auto w-full max-w-7xl px-4', className].filter(Boolean).join(' ')} {...props} />;
+export function Container({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div
+      className={cn("mx-auto w-full max-w-7xl px-4", className)}
+      {...props}
+    />
+  );
 }

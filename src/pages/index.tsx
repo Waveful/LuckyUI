@@ -1,92 +1,128 @@
-import Link from 'next/link';
-import Head from 'next/head';
-import Image from 'next/image';
+import Link from "next/link";
+import Head from "next/head";
+import Image from "next/image";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  Badge,
+  Button,
+} from "@/components/ui";
 
 export default function Home() {
   return (
-    <div
-      className={`grid grid-rows-[20px_1fr_20px] items-start justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
-    >
+    <div className="py-8">
       <Head>
         <title>LuckyUI — Home</title>
-        <meta name="description" content="Welcome to LuckyUI, Waveful's official design system." />
+        <meta
+          name="description"
+          content="Welcome to LuckyUI, Waveful's official design system."
+        />
       </Head>
-      <main className="flex flex-col gap-[20px] row-start-2 items-center text-center w-full max-w-3xl">
+
+      <div className="flex flex-col items-center text-center mb-12">
         <Image
           src="/lucky_ui_logo.png"
           alt="Lucky UI logo"
-          width={256}
-          height={256}
+          width={180}
+          height={180}
           priority
-          className="rounded-xl"
+          className="rounded-2xl mb-6"
         />
-        <h1 className="text-3xl sm:text-5xl font-semibold tracking-tight">LuckyUI</h1>
-        <p className="text-base sm:text-lg text-black/70 dark:text-white/70">
-          Waveful&apos;s official design system. Accessible, themeable components, design tokens,
-          and tooling to build consistent, high‑quality interfaces across Waveful products.
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
+          LuckyUI
+        </h1>
+        <p className="text-lg text-[hsl(var(--muted-foreground))] max-w-2xl">
+          Waveful&apos;s official design system. Accessible, themeable
+          components, design tokens, and tooling to build consistent,
+          high‑quality interfaces across Waveful products.
         </p>
+      </div>
 
-          <div className="w-full text-left mt-10">
-            <h2 className="text-xl sm:text-2xl font-semibold mb-2">Frameworks</h2>
-            <p className="text-sm text-black/70 dark:text-white/70 mb-4">
-              LuckyUI is available for different frameworks and platforms.
-            </p>
-            <div className="mt-4 w-full flex gap-2">
-              <Link href="/flutter" className="rounded-md border border-gray-100 px-3 py-2 text-left flex items-center gap-2">
-                Flutter
-                <span className="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium text-white" style={{ backgroundColor: '#024EFA' }}>
-                  New!
-                </span>
-              </Link>
-              <Link href="/nextjs" className="rounded-md border border-gray-100 px-3 py-2 text-left">
-                NextJS (Coming Soon)
-              </Link>
-            </div>
-          </div>
+      {/* Frameworks Section */}
+      <section className="mb-10">
+        <h2 className="text-xl font-semibold mb-2">Frameworks</h2>
+        <p className="text-sm text-[hsl(var(--muted-foreground))] mb-4">
+          LuckyUI is available for different frameworks and platforms.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <Link href="/flutter">
+            <Button variant="outline" className="gap-2">
+              Flutter
+              <Badge variant="default" className="text-[10px] px-1.5 py-0">
+                New!
+              </Badge>
+            </Button>
+          </Link>
+          <Link href="/nextjs">
+            <Button variant="outline">Next.js (Coming Soon)</Button>
+          </Link>
+        </div>
+      </section>
 
-          {/* Overview Section */}
-          <section id="overview" className="w-full text-left mt-10">
-            <h2 className="text-xl sm:text-2xl font-semibold mb-2">Overview</h2>
-            <p className="text-sm text-black/70 dark:text-white/70 mb-4">
-              Design tokens, assets, and foundational elements of the LuckyUI design system.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-              <Link href="/logos" className="rounded-md border border-gray-100 px-3 py-2">
-                Logos
-              </Link>
-              <Link href="/characters" className="rounded-md border border-gray-100 px-3 py-2">
-                Characters
-              </Link>
-              <Link href="/colors" className="rounded-md border border-gray-100 px-3 py-2">
-                Colors
-              </Link>
-              <Link href="/gradients" className="rounded-md border border-gray-100 px-3 py-2">
-                Gradients
-              </Link>
-              <Link href="/typography" className="rounded-md border border-gray-100 px-3 py-2">
-                Typography
-              </Link>
-            </div>
-          </section>
+      {/* Overview Section */}
+      <section className="mb-10">
+        <h2 className="text-xl font-semibold mb-2">Overview</h2>
+        <p className="text-sm text-[hsl(var(--muted-foreground))] mb-4">
+          Design tokens, assets, and foundational elements of the LuckyUI design
+          system.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[
+            { href: "/logos", title: "Logos", desc: "Brand logos and assets" },
+            { href: "/characters", title: "Characters", desc: "Waveful mascots" },
+            { href: "/colors", title: "Colors", desc: "Color palette and scales" },
+            { href: "/gradients", title: "Gradients", desc: "Gradient assets" },
+            { href: "/typography", title: "Typography", desc: "Font styles and sizes" },
+          ].map((item) => (
+            <Link key={item.href} href={item.href}>
+              <Card className="h-full hover:border-[hsl(var(--primary))] transition-colors cursor-pointer">
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-base">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-[hsl(var(--muted-foreground))]">
+                    {item.desc}
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </section>
 
-          {/* Components Section */}
-          <section id="components" className="w-full text-left mt-10">
-            <h2 className="text-xl sm:text-2xl font-semibold mb-2">Components</h2>
-            <p className="text-sm text-black/70 dark:text-white/70 mb-4">
-              Interactive UI components built with accessibility and theming in mind.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-              <Link href="/buttons" className="rounded-md border border-gray-100 px-3 py-2">
-                Buttons
-              </Link>
-              <Link href="/ui" className="rounded-md border border-gray-100 px-3 py-2">
-                All Components
-              </Link>
-            </div>
-          </section>
-
-      </main>
+      {/* Components Section */}
+      <section>
+        <h2 className="text-xl font-semibold mb-2">Components</h2>
+        <p className="text-sm text-[hsl(var(--muted-foreground))] mb-4">
+          Interactive UI components built with accessibility and theming in mind.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {[
+            { href: "/components/button", title: "Button", desc: "Clickable buttons with variants" },
+            { href: "/components/badge", title: "Badge", desc: "Status indicators and labels" },
+            { href: "/components/card", title: "Card", desc: "Content container component" },
+            { href: "/components/input", title: "Input", desc: "Form input fields" },
+            { href: "/components/tabs", title: "Tabs", desc: "Tabbed content navigation" },
+            { href: "/components/separator", title: "Separator", desc: "Visual content divider" },
+            { href: "/components/theme-toggle", title: "ThemeToggle", desc: "Light/dark theme switch" },
+          ].map((item) => (
+            <Link key={item.href} href={item.href}>
+              <Card className="h-full hover:border-[hsl(var(--primary))] transition-colors cursor-pointer">
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-base">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-[hsl(var(--muted-foreground))]">
+                    {item.desc}
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
-
