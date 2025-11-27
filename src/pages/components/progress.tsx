@@ -2,7 +2,6 @@ import Head from "next/head";
 import { useState, useEffect } from "react";
 import {
   Badge,
-  Button,
   Card,
   CardContent,
   CardDescription,

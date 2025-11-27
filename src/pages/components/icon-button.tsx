@@ -21,7 +21,7 @@ import {
   Add01Icon,
   Edit01Icon,
   Share01Icon,
-  Favourite01Icon,
+  FavouriteIcon,
 } from "hugeicons-react";
 
 export default function IconButtonPage() {
@@ -85,7 +85,7 @@ export default function IconButtonPage() {
               <IconButton icon={Add01Icon} variant="default" aria-label="Add" />
               <IconButton icon={Edit01Icon} variant="secondary" aria-label="Edit" />
               <IconButton icon={Share01Icon} variant="outline" aria-label="Share" />
-              <IconButton icon={Favourite01Icon} variant="ghost" aria-label="Favorite" />
+              <IconButton icon={FavouriteIcon} variant="ghost" aria-label="Favorite" />
               <IconButton icon={Delete01Icon} variant="destructive" aria-label="Delete" />
             </CardContent>
           </Card>
@@ -99,7 +99,7 @@ export default function IconButtonPage() {
               <div className="inline-flex items-center gap-1 rounded-lg border border-[hsl(var(--border))] p-1">
                 <IconButton icon={Edit01Icon} variant="ghost" size="sm" aria-label="Edit" />
                 <IconButton icon={Share01Icon} variant="ghost" size="sm" aria-label="Share" />
-                <IconButton icon={Favourite01Icon} variant="ghost" size="sm" aria-label="Favorite" />
+                <IconButton icon={FavouriteIcon} variant="ghost" size="sm" aria-label="Favorite" />
                 <Separator orientation="vertical" className="h-6 mx-1" />
                 <IconButton icon={Delete01Icon} variant="ghost" size="sm" aria-label="Delete" />
               </div>

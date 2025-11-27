@@ -16,7 +16,6 @@ import {
   SheetTrigger,
   Input,
   Label,
-  Separator,
   Tabs,
   TabsContent,
   TabsList,

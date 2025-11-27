@@ -22,13 +22,12 @@ import {
   Alert01Icon,
   Loading03Icon,
   Message01Icon,
-  Settings01Icon,
   ArrowDown01Icon,
   TextIcon,
   Tick01Icon,
   GridIcon,
   SlidersHorizontalIcon,
-  LayersIcon,
+  Layers01Icon,
 } from "hugeicons-react";
 
 const componentCategories = [
@@ -64,14 +63,14 @@ const componentCategories = [
     components: [
       { href: "/components/alert", title: "Alert", desc: "Alert messages and notifications", icon: Alert01Icon },
       { href: "/components/progress", title: "Progress", desc: "Progress indicators and bars", icon: Loading03Icon },
-      { href: "/components/skeleton", title: "Skeleton", desc: "Loading placeholder components", icon: LayersIcon },
+      { href: "/components/skeleton", title: "Skeleton", desc: "Loading placeholder components", icon: Layers01Icon },
     ],
   },
   {
     title: "Overlay",
     components: [
       { href: "/components/dialog", title: "Dialog", desc: "Modal dialogs for confirmations", icon: Message01Icon },
-      { href: "/components/sheet", title: "Sheet", desc: "Slide-out panels (bottom sheets)", icon: LayersIcon },
+      { href: "/components/sheet", title: "Sheet", desc: "Slide-out panels (bottom sheets)", icon: Layers01Icon },
       { href: "/components/dropdown-menu", title: "DropdownMenu", desc: "Context and action menus", icon: Menu01Icon },
       { href: "/components/tooltip", title: "Tooltip", desc: "Hover tooltips for hints", icon: Message01Icon },
     ],

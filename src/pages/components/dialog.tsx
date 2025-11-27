@@ -16,7 +16,6 @@ import {
   DialogTrigger,
   Input,
   Label,
-  Separator,
   Tabs,
   TabsContent,
   TabsList,

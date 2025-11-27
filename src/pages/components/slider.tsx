@@ -17,7 +17,6 @@ import {
 
 export default function SliderPage() {
   const [value, setValue] = useState([50]);
-  const [rangeValue, setRangeValue] = useState([25, 75]);
 
   return (
     <div className="py-8">
