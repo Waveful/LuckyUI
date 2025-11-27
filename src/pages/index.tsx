@@ -6,7 +6,6 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-  Badge,
   Button,
 } from "@/components/ui";
 
@@ -48,15 +47,10 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap gap-3">
           <Link href="/flutter">
-            <Button variant="outline" className="gap-2">
-              Flutter
-              <Badge variant="default" className="text-[10px] px-1.5 py-0">
-                New!
-              </Badge>
-            </Button>
+            <Button variant="outline">Flutter</Button>
           </Link>
           <Link href="/nextjs">
-            <Button variant="outline">Next.js (Coming Soon)</Button>
+            <Button variant="outline">Next.js</Button>
           </Link>
         </div>
       </section>
