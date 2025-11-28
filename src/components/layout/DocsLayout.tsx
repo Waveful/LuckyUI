@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { Button, Badge, ThemeSwitch, Separator } from "@/components/ui";
+import { Button, ThemeSwitch, Separator } from "@/components/ui";
 import { cn } from "@/lib/utils";
 import { Github01Icon } from "hugeicons-react";
 
@@ -78,13 +78,10 @@ export function DocsLayout({ children, className }: DocsLayoutProps) {
                 <ul className="space-y-2">
                   <li>
                     <Link
-                      className="inline-flex items-center gap-2 text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--foreground))] transition-colors"
+                      className="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--foreground))] transition-colors"
                       href="/flutter"
                     >
                       Flutter
-                      <Badge variant="default" className="text-[10px] px-1.5 py-0">
-                        New
-                      </Badge>
                     </Link>
                   </li>
                   <li>
