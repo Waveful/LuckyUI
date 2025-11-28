@@ -367,6 +367,14 @@ export function DocsLayout({ children, className }: DocsLayoutProps) {
                   <li>
                     <Link
                       className="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--foreground))] transition-colors"
+                      href="/components/sidebar"
+                    >
+                      Sidebar
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--foreground))] transition-colors"
                       href="/components/tabs"
                     >
                       Tabs

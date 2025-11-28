@@ -36,6 +36,19 @@ export { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "./
 export { Collapsible, CollapsibleTrigger, CollapsibleContent } from "./Collapsible";
 export { ScrollArea, ScrollBar } from "./ScrollArea";
 export { Separator } from "./Separator";
+export {
+  Sidebar,
+  SidebarProvider,
+  SidebarHeader,
+  SidebarContent,
+  SidebarFooter,
+  SidebarGroup,
+  SidebarItem,
+  SidebarTrigger,
+  SidebarSeparator,
+  SidebarInset,
+  useSidebar,
+} from "./Sidebar";
 
 // Overlay Components
 export {
