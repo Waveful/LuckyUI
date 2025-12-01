@@ -37,7 +37,7 @@ export default function BrandPage() {
             </CardHeader>
             <CardContent className="space-y-3">
               <div>
-                <h4 className="font-medium mb-2">Do's</h4>
+                <h4 className="font-medium mb-2">Do&apos;s</h4>
                 <ul className="list-disc list-inside space-y-1 text-sm text-[hsl(var(--muted-foreground))]">
                   <li>Use the colored logo on light backgrounds</li>
                   <li>Maintain minimum clear space around the logo (at least 20% of logo height)</li>
@@ -47,12 +47,12 @@ export default function BrandPage() {
               </div>
               <Separator />
               <div>
-                <h4 className="font-medium mb-2">Don'ts</h4>
+                <h4 className="font-medium mb-2">Don&apos;ts</h4>
                 <ul className="list-disc list-inside space-y-1 text-sm text-[hsl(var(--muted-foreground))]">
-                  <li>Don't modify, distort, or alter the logo in any way</li>
-                  <li>Don't use the logo on backgrounds that clash with its colors</li>
-                  <li>Don't place the logo too close to other elements</li>
-                  <li>Don't use outdated or low-resolution versions</li>
+                  <li>Don&apos;t modify, distort, or alter the logo in any way</li>
+                  <li>Don&apos;t use the logo on backgrounds that clash with its colors</li>
+                  <li>Don&apos;t place the logo too close to other elements</li>
+                  <li>Don&apos;t use outdated or low-resolution versions</li>
                 </ul>
               </div>
             </CardContent>
@@ -67,7 +67,7 @@ export default function BrandPage() {
             </CardHeader>
             <CardContent className="space-y-3">
               <div>
-                <h4 className="font-medium mb-2">Do's</h4>
+                <h4 className="font-medium mb-2">Do&apos;s</h4>
                 <ul className="list-disc list-inside space-y-1 text-sm text-[hsl(var(--muted-foreground))]">
                   <li>Use the standard logo on neutral backgrounds</li>
                   <li>Use the black logo on light backgrounds</li>
@@ -77,12 +77,12 @@ export default function BrandPage() {
               </div>
               <Separator />
               <div>
-                <h4 className="font-medium mb-2">Don'ts</h4>
+                <h4 className="font-medium mb-2">Don&apos;ts</h4>
                 <ul className="list-disc list-inside space-y-1 text-sm text-[hsl(var(--muted-foreground))]">
-                  <li>Don't use the white logo on light backgrounds</li>
-                  <li>Don't use the black logo on dark backgrounds</li>
-                  <li>Don't recolor or modify the logo</li>
-                  <li>Don't use the logo as a decorative element</li>
+                  <li>Don&apos;t use the white logo on light backgrounds</li>
+                  <li>Don&apos;t use the black logo on dark backgrounds</li>
+                  <li>Don&apos;t recolor or modify the logo</li>
+                  <li>Don&apos;t use the logo as a decorative element</li>
                 </ul>
               </div>
             </CardContent>
@@ -105,7 +105,7 @@ export default function BrandPage() {
           </CardHeader>
           <CardContent className="space-y-3">
             <div>
-              <h4 className="font-medium mb-2">Do's</h4>
+              <h4 className="font-medium mb-2">Do&apos;s</h4>
               <ul className="list-disc list-inside space-y-1 text-sm text-[hsl(var(--muted-foreground))]">
                 <li>Use characters to add personality and warmth to your designs</li>
                 <li>Maintain character proportions when resizing</li>
@@ -115,12 +115,12 @@ export default function BrandPage() {
             </div>
             <Separator />
             <div>
-              <h4 className="font-medium mb-2">Don'ts</h4>
+              <h4 className="font-medium mb-2">Don&apos;ts</h4>
               <ul className="list-disc list-inside space-y-1 text-sm text-[hsl(var(--muted-foreground))]">
-                <li>Don't modify, recolor, or distort the characters</li>
-                <li>Don't use characters in ways that contradict their personalities</li>
-                <li>Don't use characters in inappropriate or offensive contexts</li>
-                <li>Don't create derivative characters based on our designs</li>
+                <li>Don&apos;t modify, recolor, or distort the characters</li>
+                <li>Don&apos;t use characters in ways that contradict their personalities</li>
+                <li>Don&apos;t use characters in inappropriate or offensive contexts</li>
+                <li>Don&apos;t create derivative characters based on our designs</li>
               </ul>
             </div>
           </CardContent>
