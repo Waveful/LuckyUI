@@ -34,8 +34,8 @@ export default function Home() {
         </h1>
         <p className="text-lg text-[hsl(var(--muted-foreground))] max-w-2xl">
           Waveful&apos;s official design system. Accessible, themeable
-          components, design tokens, and tooling to build consistent,
-          high‑quality interfaces across Waveful products.
+          components, design tokens, and tooling to build scalable,
+          high‑quality interfaces.
         </p>
       </div>
 

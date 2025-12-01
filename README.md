@@ -8,8 +8,8 @@
 [![Reddit](https://img.shields.io/badge/Reddit-r%2FLuckyUI-FF4500?style=for-the-badge&logo=reddit)](https://reddit.com/r/LuckyUI)
 
 LuckyUI is Waveful's official design system. It provides accessible, themeable
-components, design tokens, and tooling to build consistent, high‑quality
-interfaces across Waveful products.
+components, design tokens, and tooling to build scalable, high‑quality
+interfaces.
 
 ### What's included
 
