@@ -141,6 +141,14 @@ export function DocsLayout({ children, className }: DocsLayoutProps) {
                       Typography
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      className="text-[hsl(var(--muted-foreground))] hover:text-[hsl(var(--foreground))] transition-colors"
+                      href="/brand"
+                    >
+                      Brand Guidelines
+                    </Link>
+                  </li>
                 </ul>
               </div>
 

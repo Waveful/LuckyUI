@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Button,
   Card,
@@ -68,9 +69,19 @@ export default function CharactersPage() {
       </Head>
 
       <h1 className="text-3xl font-bold mb-2">Characters</h1>
-      <p className="text-[hsl(var(--muted-foreground))] mb-8">
+      <p className="text-[hsl(var(--muted-foreground))] mb-1">
         Meet the Waveful mascots! Each character has their own unique
         personality.
+      </p>
+      <p className="text-sm text-[hsl(var(--muted-foreground))] mb-8">
+        By downloading these characters, you agree to our{" "}
+        <Link
+          href="/brand"
+          className="text-[hsl(var(--primary))] hover:underline"
+        >
+          Brand Guidelines
+        </Link>
+        .
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
